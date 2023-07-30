@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <div class="buttons-container">
+            <input type="text" id="cityInput" placeholder="Enter City Name">
+            <button onclick="fetchWeatherData()">Get Weather</button>
+        </div>
+        <div class="weather-info">
+            <h2>Location: <span id="location">City, Country</span></h2>
+            <p>Temperature: <span id="temperature">--°C</span></p>
+            <p>Weather: <span id="weather-description">--</span></p>
+            <p>Humidity: <span id="humidity">--%</span></p>
+            <p>Wind Speed: <span id="wind-speed">-- km/h</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
